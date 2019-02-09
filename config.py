@@ -18,7 +18,7 @@ def path(p):
 parser = argparse.ArgumentParser(description='Arguments for Compromised Account Detection Project')
 
 # The path where the project is
-PATH = '/media/hamid/3c6fed3a-b113-4df6-8350-091427a1ec8b/CompromisedAccountProjcet/E2ECAD/'
+PATH = 'INSERT THE PATH'
 
 # The location of the project (e.g., data, features, etc)
 parser.add_argument("--project_dir", type=path, required=False, default=PATH,
