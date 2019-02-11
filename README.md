@@ -1,5 +1,5 @@
 # E2ECAD
-End-to-End Compromised Account Detection
+End-to-End Compromised Account Detection (http://cse.msu.edu/~karimiha/publications/E2ECAD.pdf)
 
 Please refer to https://github.com/hamidkarimi/E2ECAD/wiki to see how to run the code.
 
