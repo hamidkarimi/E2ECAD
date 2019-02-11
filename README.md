@@ -6,7 +6,7 @@ Please refer to https://github.com/hamidkarimi/E2ECAD/wiki to see how to run the
 
 The ID-TwitterHandle-Label-Split.csv contains four fields -namely an internal ID assigned to an account (i.e., user), the Twitter handler of the user, the label (1 for compromised and 0 for not-compromised), and split in our experiments (i.e., train, test, and eval). Due to the Twitter constraints, we can not release the plain text of the tweets. Hence, in the zip file tweetid_for_users.zip you can find tweet ids associated with each user. 
 
-The processed dataset if available from http://goo.gl/vabH3Z
+The processed dataset is available from http://goo.gl/vabH3Z
 
 Please cite the following papers if you use either the dataset or the source code. 
 
