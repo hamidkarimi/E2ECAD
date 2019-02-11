@@ -1,9 +1,9 @@
 # E2ECAD
 End-to-End Compromised Account Detection
+Please refer to https://github.com/hamidkarimi/E2ECAD/wiki to see how to run the code.
 
-The ID-TwitterHandle-Label-Split.csv four fields -namely an internal ID assigned to an account (i.e., user), the Twitter handler of the user, the label (1 for compromised and 0 for not-compromised), and split in our experiments (i.e., train, test, and eval). Due to the Twitter constraints, we can not release the plain text of the tweets. Hence, in the zip file tweetid_for_users.zip you can find tweet ids associated with each user. 
 
-Refer to https://github.com/hamidkarimi/E2ECAD/wiki to see how to run the code.
+The ID-TwitterHandle-Label-Split.csv contains four fields -namely an internal ID assigned to an account (i.e., user), the Twitter handler of the user, the label (1 for compromised and 0 for not-compromised), and split in our experiments (i.e., train, test, and eval). Due to the Twitter constraints, we can not release the plain text of the tweets. Hence, in the zip file tweetid_for_users.zip you can find tweet ids associated with each user. 
 
 Please cite the following papers if you use either the dataset or the source code. 
 
