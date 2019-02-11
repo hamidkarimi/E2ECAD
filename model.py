@@ -25,7 +25,7 @@ class E2ECAD(nn.Module):
         self.user_context_fc = nn.Sequential(nn.Linear(in_features=400, out_features=args.user_context_out_size),
                                              nn.LeakyReLU(), nn.Dropout(args.dropout))
 
-        # Mapping to a vector of size 2 representing scores of compromised and not compromised, respectively.
+        # Mapping to a vector of size 2 representing scores of compromised and not compromised.
         self.final_binary_classifier = nn.Linear(
             args.lstm_hidden_size + args.network_out_size + args.user_context_out_size, 2)
 
