@@ -4,7 +4,6 @@
 import argparse
 import os
 
-
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
         return True
@@ -45,21 +44,21 @@ parser.add_argument("--sim_name", type=str, required=False, default="sim1",
 parser.add_argument("--lstm_hidden_size", type=int, required=False, default=200, help="The LSTM hidden size")
 
 # The number of lstm layer  handling the sequence of tweet features
-parser.add_argument("--lstm_num_layers", type=int, required=False, default=1, help="The number of LSTM layers")
+parser.add_argument("--lstm_num_layers", type=int, required=False, default=2, help="The number of LSTM layers")
 
 # The output size of the fully connected layer used to tune the network features
-parser.add_argument("--network_out_size", type=int, required=False, default=10,
+parser.add_argument("--network_out_size", type=int, required=False, default=50,
                     help="The output size of the FC layer tuning the network features")
 
 # The output size of the fully connected layer used to tune the user context features
-parser.add_argument("--user_context_out_size", type=int, required=False, default=50,
+parser.add_argument("--user_context_out_size", type=int, required=False, default=20,
                     help="The output size of the FC layer tuning the user context features")
 
 # The ratio of the dropout to prevent overfitting (it must be between 0.0 and 1.0)
-parser.add_argument("--dropout", type=float, required=False, default=0.3, help="The dropout")
+parser.add_argument("--dropout", type=float, required=False, default=0.2, help="The dropout")
 
 # The ratio of the weight decay to prevent overfitting (i.e., L2 regularization)
-parser.add_argument("--weight_decay", type=float, required=False, default=0.01, help="The dropout")
+parser.add_argument("--weight_decay", type=float, required=False, default=0.5, help="The dropout")
 
 # A pretrained model can be loaded by setting this flag to true.
 # Note that the model (named E2ECAD.model) should exist in args.save_path + args.sim_name + '/'
@@ -67,7 +66,7 @@ parser.add_argument("--load_pretrained", type=str2bool, required=False, default=
                     help="If true the program attempts to load the saved model")
 
 # The size of fully connected network applied to the concatenation of all extracted featuer embeddings
-parser.add_argument("--final_fc_output_size", type=int, required=False, default=30,
+parser.add_argument("--final_fc_output_size", type=int, required=False, default=100,
                     help="The size of final fully connected network")
 
 # The mask used to mask different features.
