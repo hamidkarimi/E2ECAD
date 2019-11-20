@@ -1,6 +1,7 @@
 # E2ECAD
-End-to-End Compromised Account Detection (http://cse.msu.edu/~karimiha/publications/E2ECAD.pdf)
+This is the implemenation for the paper "End-to-End Compromised Account Detection" (http://cse.msu.edu/~karimiha/publications/E2ECAD.pdf)
 
+# Instructions 
 Please refer to https://github.com/hamidkarimi/E2ECAD/wiki to see how to run the code.
 
 
@@ -10,6 +11,7 @@ The entired processed data files are available from http://goo.gl/vabH3Z
 
 Please cite the following papers if you use either the dataset or the source code. 
 
+# Citations
 @inproceedings{karimi2018end,
   title={End-to-End Compromised Account Detection},
   author={Karimi, Hamid and VanDam, Courtland and Ye, Liyang and Tang, Jiliang},
@@ -29,3 +31,6 @@ Please cite the following papers if you use either the dataset or the source cod
   organization={IEEE}
 }
 
+# Webpage 
+To follow my work please follow my webpage 
+http://cse.msu.edu/~karimiha/
